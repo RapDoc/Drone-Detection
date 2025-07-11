@@ -1,36 +1,33 @@
-# 🚁 Drone Detection System using YOLOv8 and FMCW Radar
+# 🚁 Drone Detection System using YOLOv8
 
-An intelligent drone detection system that combines **computer vision** and **radar-based motion sensing** to accurately identify and track drones in restricted airspaces. Built using **YOLOv8** for visual detection and the **Waveshare 24GHz FMCW radar** module for motion detection.
+A computer vision-based system that uses **YOLOv8** to detect drones in real time from a video feed. Built to assist in monitoring and securing areas from unauthorized drone activity using camera-only visual detection.
 
 ---
 
 ## 🎯 Objectives
 
-- ✅ Detect drones using camera feed and YOLOv8 object detection
-- ✅ Sense motion using FMCW radar and filter non-drone objects
-- 🔄 Fuse radar + vision data for robust detection
-- 🚨 Trigger alerts when drone is detected in restricted area
+- ✅ Detect drones in live video using object detection
+- ✅ Highlight and track drones with bounding boxes
+- ✅ Log drone sightings for further analysis
 
 ---
 
 ## 🧠 Features
 
-- 🧍‍♂️ **Dual-Sensor Fusion** – Combines radar and visual data to reduce false positives
-- 📸 **YOLOv8-based Visual Detection** – Real-time drone classification and bounding boxes
-- 📡 **24GHz FMCW Radar** – Detects object motion and range using Waveshare S3KM1110
-- ⏱️ **Low Latency** – Optimized for real-time performance
-- 📊 **Logging & Display** – Optional debug window and event logging
+- 📸 **YOLOv8 Drone Detection** — Real-time object detection using pretrained or custom YOLOv8 model
+- 🔄 **Live Video Feed** — Uses OpenCV to capture and display detections
+- 💾 **Event Logging** — Logs timestamped detections
+- ⚡ **High Performance** — Optimized for low-latency drone detection
 
 ---
 
 ## 🛠 Tech Stack
 
-| Component       | Tool / Library                            |
-|------------------|--------------------------------------------|
-| Visual Detection | YOLOv8 (Ultralytics), OpenCV              |
-| Radar Interface  | UART Serial (PySerial), Waveshare S3KM1110 |
-| Data Fusion      | Python + Custom Logic                     |
-| Visualization    | OpenCV, Matplotlib (optional)             |
-| Hardware         | Camera + Waveshare 24GHz FMCW Radar       |
+| Component       | Tool / Library           |
+|------------------|---------------------------|
+| Visual Detection | YOLOv8 (Ultralytics)      |
+| Image Processing | OpenCV                    |
+| Model Management | PyTorch, Ultralytics CLI  |
+| Logging & Alerts | Python (built-in logging) |
 
 ---
